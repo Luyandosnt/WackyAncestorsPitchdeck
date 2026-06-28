@@ -42,6 +42,58 @@
     page-break-after: always;
   }
 
+  .gameplay-gallery-page {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .gameplay-gallery-page .inner {
+    min-height: 297mm;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gameplay-gallery-intro {
+    max-width: 128mm;
+    margin-top: 10mm;
+    position: relative;
+    z-index: 2;
+  }
+
+  .gameplay-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3mm;
+    align-items: end;
+    margin-top: auto;
+    margin-bottom: 22mm;
+    position: relative;
+    z-index: 2;
+  }
+
+  .gameplay-shot {
+    background: rgba(250,252,255,0.08);
+    border: 0.5mm solid rgba(244,114,182,0.45);
+    box-shadow: 0 4mm 12mm rgba(0,0,0,0.28);
+    padding: 1.5mm;
+  }
+
+  .gameplay-shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .gameplay-shot-number {
+    display: block;
+    margin-top: 1.5mm;
+    font-family: 'Space Mono', monospace;
+    font-size: 6.5pt;
+    color: var(--gold-light);
+    letter-spacing: 0.12em;
+    text-align: center;
+  }
+
   @media print {
     body { margin: 0; }
     .page { margin: 0; box-shadow: none; page-break-after: always; }
@@ -1770,6 +1822,54 @@ Confidential — For SpielFabrique Review Only</div>
     <div style="background:var(--navy);margin:0 -16mm -16mm;padding:4mm 16mm;display:flex;justify-content:space-between;align-items:center;">
       <div style="font-family:'Crimson Pro',serif;font-style:italic;font-size:11pt;color:rgba(250,252,255,0.75);">"Ten years. Fifteen titles. One universe ready to be heard."</div>
       <div style="font-family:'Space Mono',monospace;font-size:7pt;color:var(--blue-light);letter-spacing:0.08em;text-align:right;">hello@gecogames.com · +260 975 359 919</div>
+    </div>
+
+    <div class="page-footer">
+      <span>GECO Games LTD · SpielFabrique BRIDGE 2026</span>
+      <span>CONFIDENTIAL</span>
+      <span>gecogames.com</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FINAL PAGE: GAMEPLAY SCREENSHOTS -->
+<!-- ============================================================ -->
+<div class="page gameplay-gallery-page">
+  <div class="inner">
+    <div class="cover-bg-pattern"></div>
+    <div class="corner-mark tl"></div>
+    <div class="corner-mark tr"></div>
+    <div class="corner-mark bl"></div>
+    <div class="corner-mark br"></div>
+
+    <div class="section-kicker">Gameplay Screens</div>
+    <div class="gameplay-gallery-intro">
+      <h1 class="section-title" style="color: var(--white);">Wacky Ancestors in Play</h1>
+      <p class="section-intro" style="color: rgba(250,252,255,0.78);">A live mobile slice showing combat, story, progression, mythic iconography, and the Alkebulan world map.</p>
+    </div>
+
+    <div class="gameplay-gallery-grid">
+      <figure class="gameplay-shot">
+        <img src="assets/screenshots/5.png" alt="Wacky Ancestors combat gameplay screen">
+        <figcaption class="gameplay-shot-number">01</figcaption>
+      </figure>
+      <figure class="gameplay-shot">
+        <img src="assets/screenshots/3.png" alt="Wacky Ancestors mission dialogue screen">
+        <figcaption class="gameplay-shot-number">02</figcaption>
+      </figure>
+      <figure class="gameplay-shot">
+        <img src="assets/screenshots/4.png" alt="Wacky Ancestors heroes upgrade screen">
+        <figcaption class="gameplay-shot-number">03</figcaption>
+      </figure>
+      <figure class="gameplay-shot">
+        <img src="assets/screenshots/1.png" alt="Wacky Ancestors emblem loading screen">
+        <figcaption class="gameplay-shot-number">04</figcaption>
+      </figure>
+      <figure class="gameplay-shot">
+        <img src="assets/screenshots/2.png" alt="Wacky Ancestors Alkebulan map screen">
+        <figcaption class="gameplay-shot-number">05</figcaption>
+      </figure>
     </div>
 
     <div class="page-footer">
